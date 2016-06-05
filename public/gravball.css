@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #99C7E2;
+}
