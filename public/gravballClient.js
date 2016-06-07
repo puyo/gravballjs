@@ -18,7 +18,7 @@ class Server {
         this.world.defaultContactMaterial.friction = 0
         this.world.defaultContactMaterial.restitution = 0.1
         this.world.applyDamping = false
-        
+
         const server = this
         this.world.on('beginContact', function (e) {
             //console.log('contact', e.bodyA, e.bodyB)
@@ -35,7 +35,7 @@ class Server {
     }
 
     initArena() {
-        this.arena = { w: 500, h: 500 }
+        this.arena = { w: 1000, h: 1000 }
     }
 
     initWalls() {
