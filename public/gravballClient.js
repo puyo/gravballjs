@@ -16,7 +16,7 @@ class Server {
             //gravity: [0, -1000]
         })
         this.world.defaultContactMaterial.friction = 0
-        this.world.defaultContactMaterial.restitution = 0.9
+        this.world.defaultContactMaterial.restitution = 0.1
         this.world.applyDamping = false
         
         const server = this
@@ -103,12 +103,12 @@ class Server {
     initGoals() {
         this.goals = new Map()
         this.initGoal(0, {
-            position: [+this.arena.w/3, -this.arena.h/3],
+            position: [0, this.arena.h/2],
             color: 'red',
             collisionType: 'goal'
         })
         this.initGoal(1, {
-            position: [-this.arena.w/3, this.arena.h/3],
+            position: [0, -this.arena.h/2],
             color: 'cyan',
             collisionType: 'goal'
         })
@@ -152,7 +152,7 @@ class Server {
         // apply gravity!
         var ax = 0
         var ay = 0
-        var k = 50000 // a scalar
+        var k = 100000 // a scalar
         for (let name in this.players) {
             let p = this.players[name]
             var dx = p.position[0] - this.ball.position[0]
