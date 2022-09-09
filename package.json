@@ -6,12 +6,28 @@
   "dependencies": {
     "arcade": "0.0.2",
     "express": "^4.10.2",
-    "faker": "^3.0.1",
+    "faker": "^4.1.0",
     "ninja": "^3.0.8",
     "p2": "^0.7.1",
-    "socket.io": "^1.3.7"
+    "socket.io": "^2.0.1"
   },
   "devDependencies": {
-    "webpack": "^1.13.1"
-  }
+    "flow-bin": "^0.47.0",
+    "flow-typed": "^2.1.2",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puyo/gravballjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puyo/gravballjs/issues"
+  },
+  "homepage": "https://github.com/puyo/gravballjs#readme"
 }
